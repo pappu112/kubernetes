@@ -6,16 +6,16 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-    - nginx.example.com
-    secretName: hello-app-tls
+    - nndata.mlopps.com
+    secretName: self-gitlab
   rules:
-  - host: nginx.example.com
+  - host: nndata.mlopps.com
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: nginx-deploy-main
+            name: gitlab-deploymen
             port: 
               number: 80
