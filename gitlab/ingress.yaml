@@ -16,6 +16,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: gitlab-deploymen
+            name: gitlab-deployment
             port: 
               number: 80
